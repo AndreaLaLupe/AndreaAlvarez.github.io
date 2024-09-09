@@ -16,7 +16,7 @@ h1, h2 {
 }
 
 a {
-    color: #00509e; /* Azul brillante */
+    color: #f5f6f7; /* Azul brillante */
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -76,7 +76,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 5em;
 }
 
 header .subtitle {
