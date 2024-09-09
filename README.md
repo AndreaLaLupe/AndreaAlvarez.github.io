@@ -1,7 +1,7 @@
 # Andrea Guadalupe Alvarez Ramos
 
 **Científica de Datos y Analista III Datos PCI**  
-[LinkedIn](https://www.linkedin.com/in/andrea-guadalupe-alvarez-ramos-b11b50194) | [GitHub](https://github.com/anarodriguez)  
+[LinkedIn](https://www.linkedin.com/in/andrea-guadalupe-alvarez-ramos-b11b50194) | [GitHub](https://github.com/AndreaLaLupe)  
 Email: aalvarez2014ig@gmail.com
 
 ## Extracto Profesional
