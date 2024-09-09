@@ -93,7 +93,7 @@ header .contact a {
 
 header .contact a:hover {
     text-decoration: underline;
-    color: #b1d4f2;
+    color: #f5f6f7;
     /*color: #f0f8ff;  Color claro al hacer hover */
 }
 
