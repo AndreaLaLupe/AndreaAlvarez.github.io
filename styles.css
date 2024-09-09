@@ -26,6 +26,28 @@ a:hover {
     padding: 20px 0;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header-image {
+    flex: 0.3; /* Toma el 30% del ancho */
+}
+
+.profile-pic {
+    width: 150px; /* Tamaño de la imagen */
+    height: 150px;
+    border-radius: 50%; /* Para hacerla redonda */
+    object-fit: cover;
+    border: 3px solid #00509e; /* Borde azul brillante */
+}
+
 header {
     background-color: #004080; /* Fondo azul oscuro */
     color: #fff;
