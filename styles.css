@@ -1,10 +1,14 @@
+/* Importando una fuente personalizada desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Estilo global */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff; /* Fondo azul claro */
+    background-color: #f4f7f9; /* Fondo gris suave */
+    line-height: 1.6;
 }
 
 h1, h2 {
@@ -14,79 +18,106 @@ h1, h2 {
 a {
     color: #00509e; /* Azul brillante */
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #003366; /* Azul más oscuro al hacer hover */
 }
 
 .container {
-    width: 80%;
+    width: 85%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
+}
+
+header {
+    background-color: #004080; /* Fondo azul oscuro */
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .header-text {
     flex: 1;
+    padding-right: 20px;
 }
 
 .header-image {
-    flex: 0.3; /* Toma el 30% del ancho */
+    flex: 0.4; /* Ajustar tamaño */
+    text-align: center;
 }
 
 .profile-pic {
-    width: 150px; /* Tamaño de la imagen */
-    height: 150px;
-    border-radius: 50%; /* Para hacerla redonda */
+    width: 180px; /* Tamaño más grande */
+    height: 180px;
+    border-radius: 50%; /* Hacer la imagen redonda */
     object-fit: cover;
-    border: 3px solid #00509e; /* Borde azul brillante */
+    border: 4px solid #00509e; /* Borde azul brillante */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease;
 }
 
-header {
-    background-color: #004080; /* Fondo azul oscuro */
-    color: #fff;
-    padding: 30px 0;
-    text-align: center;
+.profile-pic:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 header .subtitle {
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-top: 10px;
 }
 
 header .contact a {
     font-size: 1.1em;
     margin-right: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+header .contact a:hover {
+    text-decoration: underline;
+    color: #f0f8ff; /* Color claro al hacer hover */
 }
 
 section {
     padding: 40px 0;
     background-color: #fff;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra en las secciones */
 }
 
 section:nth-child(even) {
-    background-color: #d9e6f2; /* Fondo azul suave */
+    background-color: #e0efff; /* Fondo azul suave alternado */
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 20px;
+    text-align: center;
+    color: #00509e; /* Color principal de los títulos */
 }
 
 ul {
     list-style-type: square;
+    padding-left: 20px;
 }
 
 ul li {
@@ -96,16 +127,44 @@ ul li {
 .job h3, .education-item h3 {
     margin-bottom: 5px;
     color: #00509e; /* Azul vibrante */
+    font-weight: bold;
+}
+
+.education-item p, .job p {
+    font-size: 1.1em;
+    color: #333;
 }
 
 footer {
     background-color: #004080;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     margin-top: 40px;
+    border-top: 4px solid #00509e;
 }
 
 footer p {
     margin: 0;
+    font-size: 1em;
+}
+
+/* Estilo para pantallas pequeñas (responsivo) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        padding-right: 0;
+    }
+
+    .header-image {
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
 }
